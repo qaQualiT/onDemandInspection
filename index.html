@@ -1,60 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Qualitech offers professional inspection, expediting, audit, and quality engineering services for the oil and gas industry.">
-        <meta
-      name="keywords"
-      content="quality inspection, product inspection, manufacturing quality, supply chain quality, factory audit, QC services"
-    />
-
-    <title>Qualitech - Inspection | Expediting | Audit | Quality Engineering</title>
-
-    <link rel="icon" href="images/QTH LOGO (11).png" type="image/png">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="On Demand Inspection provides professional quality control, inspection, and audit services for industries worldwide.">
+    <meta name="keywords" content="on demand inspection, quality control, industrial inspection, audit services, quality assurance">
+    
+    <title>On Demand Inspection - Professional Quality Control Services</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- SweetAlert2 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet">
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Qualitech",
-  "url": "https://qualitechme.com/"
-}
-</script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- Header/Navigation -->
     <header class="header">
       <div class="container">
-        <a href="#home">
-          <img src="images/logo1.png" class="logo" alt="Qualitech"
-        /></a>
-        <!-- <a href="#" class="logo">Quali<span>Tech</span></a> -->
+        <div class="logo-container">
+          <div class="logo-icon">
+            <i class="fas fa-search-plus"></i>
+          </div>
+          <span class="logo-text">On Demand Inspection</span>
+        </div>
         <nav class="navbar">
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="sustainability.html">Sustainability</a></li>
-            <li><a href="#testimonials">Our Industries</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#process">Process</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="careers.html">Careers</a></li>
           </ul>
           <div class="hamburger">
             <span class="bar"></span>
@@ -67,383 +46,71 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-      <video autoplay muted loop playsinline id="homeVideo">
-        <source src="videos/1.mp4" type="video/mp4" />
-        <!-- Optional: add WebM for better compatibility -->
-
-        <!-- Fallback text -->
-        Your browser does not support the video tag.
-      </video>
+      <div class="hero-background">
+        <div class="hero-overlay"></div>
+      </div>
       <div class="container">
-        <div class="hero-content" style="color: rgb(255, 255, 255)">
+        <div class="hero-content">
           <h1 class="hero-title">
-            Inspection I Expediting I Audit I Quality Engineering
+            Professional Quality Control
+            <span class="highlight">On Demand</span>
           </h1>
-          <p class="hero-subtitle" style="font-style: italic">
-            Lasting Relationship with Quality and Ethics
+          <p class="hero-subtitle">
+            Comprehensive inspection, audit, and quality engineering services delivered when and where you need them most
           </p>
           <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Contact Us</a>
+            <a href="#contact" class="btn btn-primary">Get Quote</a>
             <a href="#services" class="btn btn-secondary">Our Services</a>
           </div>
         </div>
-        <!-- <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a9e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Quality inspection professional at work">
-            </div> -->
+        <div class="hero-features">
+          <div class="feature-item">
+            <i class="fas fa-clock"></i>
+            <span>24/7 Availability</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-globe"></i>
+            <span>Global Coverage</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-certificate"></i>
+            <span>Certified Experts</span>
+          </div>
+        </div>
       </div>
-      <!-- <div class="scroll-indicator">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div> -->
     </section>
 
     <!-- Stats Section -->
     <section class="stats">
       <div class="container">
-        <div class="stat-card">
-          <div class="stat-number" data-count="6000">0</div>
-          <div class="stat-label">Inspections</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number" data-count="50000">0</div>
-          <div class="stat-label">Inspection Hours</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number" data-count="250">0</div>
-          <div class="stat-label">Projects</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number" data-count="50">0</div>
-          <div class="stat-label">clients</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Our Core Values</h2>
-          <!-- <p class="section-subtitle">Comprehensive solutions to protect your brand reputation and ensure product compliance</p> -->
-        </div>
-
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">
-              <!-- <i class="fas fa-eye"></i> -->
-              <img src="images/icons/vision_14244567.png" alt="" />
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-search"></i>
             </div>
-            <h3>Vision</h3>
-            <p>
-              Our vision is to be the finest strategic service partner providing
-              the highest degree of service and value by delivering committed
-              tangible results.
-            </p>
-            <!-- <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a> -->
+            <div class="stat-number" data-count="10000">0</div>
+            <div class="stat-label">Inspections Completed</div>
           </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <img src="images/icons/focus_14244331.png" alt="" />
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-clock"></i>
             </div>
-            <h3>Mission</h3>
-            <p>
-              Qualitech, being the best service partner, continuously nourishes
-              our entrepreneurialism, ethics, passion, reliability, innovative
-              spirit, and enables our customers to accomplish their goals more
-              effectively. Current industrial benchmarks are continuously
-              surpassed by organizing periodic assessments and training of our
-              talents.
-            </p>
-            <!-- <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a> -->
+            <div class="stat-number" data-count="75000">0</div>
+            <div class="stat-label">Service Hours</div>
           </div>
-
-          <div class="service-card core-values-card">
-            <div class="service-icon">
-              <!-- <i class="fas fa-check-double"></i> -->
-              <img src="images/icons/star_14244489.png" alt="" />
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-building"></i>
             </div>
-            <h3>Core Values</h3>
-            <ul>
-              <li>
-                <strong>Integrity:</strong> Doing the right thing and steadfast
-                adherence to a strict moral or ethical code.
-              </li>
-              <li>
-                <strong>Customer First:</strong> Serving 100% to customers
-                satisfaction.
-              </li>
-              <li>
-                <strong>Excellence:</strong> Delivering work with eminence.
-              </li>
-              <li>
-                <strong>Accountability:</strong> Taking responsibility of one’s
-                activity.
-              </li>
-              <li>
-                <strong>Quality:</strong> Accomplish the goal with a go beyond
-                the requirements & expectations on the committed services.
-              </li>
-              <li>
-                <strong>Innovation:</strong> Continuous exploration of new
-                ideas.
-              </li>
-              <li>
-                <strong>Employee Focus:</strong> Employee development with a
-                creative working environment.
-              </li>
-              <li>
-                <strong>Team Work:</strong> Emphasize the virtues of cooperation
-                and coordination.
-              </li>
-            </ul>
-
-            <a href="#contact" class="btn btn-primary"
-              >Contact Us <i class="fas fa-arrow-right"></i
-            ></a>
+            <div class="stat-number" data-count="500">0</div>
+            <div class="stat-label">Projects Delivered</div>
           </div>
-
-          <!-- <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-box-open"></i>
-                    </div>
-                    <h3>Project Management Services</h3>
-                    <p>Ensure proper loading procedures and prevent shipping damage or quantity discrepancies.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div> -->
-
-          <!-- <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3>Quality Engineering and Certification Services</h3>
-                    <p>Evaluate supplier capabilities and manufacturing processes to mitigate supply chain risks.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div> -->
-
-          <!-- <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3>Lifting Equipment Inspection & Certification</h3>
-                    <p>Specialized testing services to verify product safety, durability, and regulatory compliance.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div> -->
-          <!-- <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3>Property / Home Inspection & Snagging Services</h3>
-                    <p>Specialized testing services to verify product safety, durability, and regulatory compliance.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Services Section with Background Cards -->
-    <section class="services" id="services">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Our Services</h2>
-          <p class="section-subtitle">
-            Tailored quality control services for your specific industry
-            requirements
-          </p>
-        </div>
-
-        <div class="featured-grid">
-          <!-- Card 1 -->
-          <div
-            class="featured-card"
-            style="
-              background-image: linear-gradient(
-                  rgba(0, 0, 0, 0.3),
-                  rgba(0, 0, 0, 0.3)
-                ),
-                url('images/vendor.jpg');
-            "
-          >
-            <div class="featured-content">
-              <h3>Vendor Surveillance and Source Inspection</h3>
-              <p>
-                We focused to provide a right-first-time service to our
-                customers through the supply of a professional .....
-              </p>
-              <button class="btn btn-outline explore-btn" data-service="vendor">
-                Explore Service
-              </button>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-handshake"></i>
             </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="featured-card"
-            style="
-              background-image: linear-gradient(
-                  rgba(0, 0, 0, 0.3),
-                  rgba(0, 0, 0, 0.3)
-                ),
-                url('images/expediting.jpg');
-            "
-          >
-            <div class="featured-content">
-              <h3>Expediting</h3>
-              <p>
-                Our Expediting services enable your project procurement team to
-                proceed as scheduled and aid in minimizing delays and costly
-                product deficiency issues.
-              </p>
-              <button
-                class="btn btn-outline explore-btn"
-                data-service="expediting"
-              >
-                Explore Service
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="featured-card"
-            style="
-              background-image: linear-gradient(
-                  rgba(0, 0, 0, 0.3),
-                  rgba(0, 0, 0, 0.3)
-                ),
-                url('images/audit.jpg');
-            "
-          >
-            <div class="featured-content">
-              <h3>Supplier Evaluation / Audit</h3>
-              <p>
-                Qualitech offers Evaluation audits for a supplier/vendor to
-                determine whether they are capable enough to handle the purchase
-                order, or contract.
-              </p>
-              <button class="btn btn-outline explore-btn" data-service="audit">
-                Explore Service
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div
-            class="featured-card"
-            style="
-              background-image: linear-gradient(
-                  rgba(0, 0, 0, 0.3),
-                  rgba(0, 0, 0, 0.3)
-                ),
-                url('images/project.jpg');
-            "
-          >
-            <div class="featured-content">
-              <h3>Project Management Services</h3>
-              <p>
-                Qualitech Project management services helps to achieve specific
-                project objectives according to the project acceptance criteria
-                within agreed parameters.
-              </p>
-              <button
-                class="btn btn-outline explore-btn"
-                data-service="project"
-              >
-                Explore Service
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div
-            class="featured-card"
-            style="
-              background-image: linear-gradient(
-                  rgba(0, 0, 0, 0.3),
-                  rgba(0, 0, 0, 0.3)
-                ),
-                url('images/Industries11.jpg');
-            "
-          >
-            <div class="featured-content">
-              <h3>Quality Engineering and Certification Services</h3>
-              <p>
-                Qualitech offers consolation with a team with extensive
-                technical experience to support our customers in obtaining and
-                providing the necessary information....
-              </p>
-              <button
-                class="btn btn-outline explore-btn"
-                data-service="qualityengineering"
-              >
-                Explore Service
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div
-            class="featured-card"
-            style="
-              background-image: linear-gradient(
-                  rgba(0, 0, 0, 0.3),
-                  rgba(0, 0, 0, 0.3)
-                ),
-                url('images/lifting.jpg');
-            "
-          >
-            <div class="featured-content">
-              <h3>Lifting Equipment Inspection & Certification</h3>
-              <p>
-                Lifting equipment inspection involves a thorough examination and
-                testing of lifting machinery and accessories to ensure they are
-                safe and comply with regulatory standards.
-              </p>
-              <button
-                class="btn btn-outline explore-btn"
-                data-service="lifting"
-              >
-                Explore Service
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 7 -->
-          <div
-            class="featured-card"
-            style="
-              background-image: linear-gradient(
-                  rgba(0, 0, 0, 0.3),
-                  rgba(0, 0, 0, 0.3)
-                ),
-                url('images/property.jpg');
-            "
-          >
-            <div class="featured-content">
-              <h3>Property / Home Inspection & Snagging Services</h3>
-              <p>
-                Property/Home inspections provide an opportunity for a buyer or
-                tenant to identify any major issues with a home before starting
-                or closing.
-              </p>
-              <button
-                class="btn btn-outline explore-btn"
-                data-service="property"
-              >
-                Explore Service
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal Overlay -->
-      <div class="modal-overlay" id="modalOverlay">
-        <div class="modal-content">
-          <button class="close-modal">&times;</button>
-          <div class="modal-body">
-            <!-- Content will be inserted here by JavaScript -->
+            <div class="stat-number" data-count="150">0</div>
+            <div class="stat-label">Satisfied Clients</div>
           </div>
         </div>
       </div>
@@ -452,69 +119,242 @@
     <!-- About Section -->
     <section class="about" id="about">
       <div class="container">
-        <div class="about-image">
-          <img src="images/about.jpg" alt="Qualitech inspection team" />
-          <div class="experience-badge">
-            <div class="years">15+</div>
-            <div class="label">Years Experience Professionals</div>
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="section-header">
+              <h2 class="section-title">Our Vision & Mission</h2>
+            </div>
+            
+            <div class="vision-mission">
+              <div class="vm-card">
+                <div class="vm-icon">
+                  <i class="fas fa-eye"></i>
+                </div>
+                <h3>Vision</h3>
+                <p>To revolutionize quality assurance by providing instant, reliable, and comprehensive inspection services that empower businesses to maintain excellence in their operations and products.</p>
+              </div>
+              
+              <div class="vm-card">
+                <div class="vm-icon">
+                  <i class="fas fa-target"></i>
+                </div>
+                <h3>Mission</h3>
+                <p>We deliver on-demand inspection and quality control services through cutting-edge technology and expert professionals, ensuring our clients achieve operational excellence while maintaining the highest safety and quality standards.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="about-content">
-          <!-- <h2 class="section-title">Trusted Quality Inspection Partner</h2> -->
-          <p></p>
-
-          <div class="about-features">
-            <div class="feature">
-              <i class="fas fa-certificate"></i>
-              <div>
-                <h4>Certified Professionals</h4>
-                <p>
-                  Qualitech is in the business of Industrial Inspections,
-                  Engineering Services, Quality Certification, Management
-                  Consultancy, Technical Testing and analysis. Qualitech
-                  established in Middle East and primary philosophy is to
-                  maintain a team of highly skilled and dedicated professionals
-                  to achieve full compliance with client requirement and quality
-                  of end product.
-                </p>
-              </div>
-            </div>
-            <div class="feature">
-              <i class="fas fa-globe"></i>
-              <div>
-                <!-- <h4>Global Coverage</h4> -->
-                <p>
-                  Our Inspection, Expediting, Audit, Quality Engineering and
-                  Certification Services have a reputation in the industry for
-                  meeting and exceeding client’s expectations. We offer cost
-                  effective and quality services in worldwide with qualified and
-                  experienced professionals in the various sectors.
-                </p>
-              </div>
-            </div>
-            <div class="feature">
-              <i class="fas fa-clock"></i>
-              <div>
-                <!-- <h4>Impartial Reporting</h4> -->
-                <p>
-                  Qualitech providing highly qualified local expertise to meet
-                  the project requirements delivered on time and committed to
-                  provide services within the framework of client specific
-                  requirements. Our Operations/Technical team ready to answer
-                  client queries in 24X7 services.
-                </p>
-              </div>
+          
+          <div class="about-image">
+            <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional inspection team" />
+            <div class="experience-badge">
+              <div class="years">15+</div>
+              <div class="label">Years of Excellence</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="more-details">
-      <a href="" id="openPopup" class="btn btn-primary">More Details </a>
-      <div id="popup" class="popup-overlay">
-        <div class="popup-content">
-          <span id="closePopup">&times;</span>
-          <img src="images/Marketing Presentation.jpg" alt="Popup Image" />
+
+    <!-- Core Values Section -->
+    <section class="core-values">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Core Values</h2>
+          <p class="section-subtitle">The principles that drive our commitment to excellence</p>
+        </div>
+        
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Reliability</h3>
+            <p>Consistent, dependable service delivery that you can count on, every time.</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Speed</h3>
+            <p>Rapid response times and efficient processes to meet your urgent inspection needs.</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Excellence</h3>
+            <p>Uncompromising commitment to the highest standards of quality and professionalism.</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Partnership</h3>
+            <p>Building lasting relationships through trust, transparency, and collaborative solutions.</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Innovation</h3>
+            <p>Leveraging advanced technology and methodologies to deliver superior results.</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <h3>Integrity</h3>
+            <p>Honest, ethical practices that ensure impartial and accurate assessments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">Comprehensive quality control solutions tailored to your industry needs</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-image">
+              <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Quality Inspection" />
+            </div>
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <h3>Quality Inspection</h3>
+              <p>Comprehensive product and process inspections to ensure compliance with specifications and industry standards.</p>
+              <ul class="service-features">
+                <li>Pre-production inspection</li>
+                <li>During production monitoring</li>
+                <li>Final random inspection</li>
+                <li>Container loading supervision</li>
+              </ul>
+              <button class="btn btn-outline explore-btn" data-service="inspection">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Audit Services" />
+            </div>
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fas fa-clipboard-check"></i>
+              </div>
+              <h3>Supplier Audit</h3>
+              <p>Thorough evaluation of supplier capabilities, processes, and quality management systems.</p>
+              <ul class="service-features">
+                <li>Facility assessment</li>
+                <li>Process evaluation</li>
+                <li>Quality system review</li>
+                <li>Compliance verification</li>
+              </ul>
+              <button class="btn btn-outline explore-btn" data-service="audit">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Project Management" />
+            </div>
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3>Project Management</h3>
+              <p>End-to-end project oversight ensuring timely delivery and quality compliance throughout the lifecycle.</p>
+              <ul class="service-features">
+                <li>Timeline management</li>
+                <li>Quality milestones</li>
+                <li>Risk assessment</li>
+                <li>Progress reporting</li>
+              </ul>
+              <button class="btn btn-outline explore-btn" data-service="project">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Quality Engineering" />
+            </div>
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3>Quality Engineering</h3>
+              <p>Advanced engineering solutions to optimize quality processes and implement continuous improvement.</p>
+              <ul class="service-features">
+                <li>Process optimization</li>
+                <li>Quality system design</li>
+                <li>Technical consulting</li>
+                <li>Training programs</li>
+              </ul>
+              <button class="btn btn-outline explore-btn" data-service="engineering">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Expediting Services" />
+            </div>
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fas fa-shipping-fast"></i>
+              </div>
+              <h3>Expediting Services</h3>
+              <p>Proactive monitoring and coordination to ensure timely delivery while maintaining quality standards.</p>
+              <ul class="service-features">
+                <li>Production monitoring</li>
+                <li>Delivery tracking</li>
+                <li>Vendor coordination</li>
+                <li>Schedule optimization</li>
+              </ul>
+              <button class="btn btn-outline explore-btn" data-service="expediting">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Certification Services" />
+            </div>
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h3>Certification Services</h3>
+              <p>Professional certification and compliance verification for equipment, processes, and systems.</p>
+              <ul class="service-features">
+                <li>Equipment certification</li>
+                <li>Process validation</li>
+                <li>Compliance testing</li>
+                <li>Documentation support</li>
+              </ul>
+              <button class="btn btn-outline explore-btn" data-service="certification">
+                Learn More
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -523,463 +363,132 @@
     <section class="process" id="process">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">How We Works</h2>
-          <p class="section-subtitle">
-            Transparent methodology that ensures consistent, reliable results
-          </p>
+          <h2 class="section-title">How We Work</h2>
+          <p class="section-subtitle">Streamlined process designed for efficiency and excellence</p>
         </div>
 
-        <div class="process-steps">
-          <div class="step">
+        <div class="process-timeline">
+          <div class="process-step">
             <div class="step-number">1</div>
             <div class="step-content">
-              <h3>Requirement</h3>
-              <p>Enquiries Received from The Client</p>
+              <h3>Request</h3>
+              <p>Submit your inspection requirements through our platform or contact our team directly</p>
             </div>
           </div>
-          <div class="step">
+          
+          <div class="process-step">
             <div class="step-number">2</div>
             <div class="step-content">
-              <h3>Analysis</h3>
-              <p>Identifying the job requirement</p>
+              <h3>Assessment</h3>
+              <p>Our experts analyze your needs and develop a customized inspection plan</p>
             </div>
           </div>
-          <div class="step">
+          
+          <div class="process-step">
             <div class="step-number">3</div>
             <div class="step-content">
-              <h3>Screening</h3>
-              <p>Check the availability through technical screening</p>
+              <h3>Deployment</h3>
+              <p>Certified inspectors are deployed to your location with specialized equipment</p>
             </div>
           </div>
-          <div class="step">
+          
+          <div class="process-step">
             <div class="step-number">4</div>
             <div class="step-content">
-              <h3>Proposals</h3>
-              <p>Submitting the proposals to client based on the requirement</p>
+              <h3>Execution</h3>
+              <p>Thorough inspection conducted according to industry standards and your specifications</p>
             </div>
           </div>
-          <div class="step">
+          
+          <div class="process-step">
             <div class="step-number">5</div>
             <div class="step-content">
-              <h3>Followup</h3>
-              <p>Clients interaction for the confirmation of jobs</p>
+              <h3>Reporting</h3>
+              <p>Detailed reports delivered with findings, recommendations, and compliance status</p>
             </div>
           </div>
-          <div class="step">
+          
+          <div class="process-step">
             <div class="step-number">6</div>
             <div class="step-content">
-              <h3>Execution</h3>
-              <p>
-                Completing the job as per the requirement & submission of
-                deliverables
-              </p>
+              <h3>Follow-up</h3>
+              <p>Ongoing support and follow-up services to ensure continuous quality improvement</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials Carousel -->
-    <!-- <section class="testimonials" id="testimonials">
+    <!-- Industries Section -->
+    <section class="industries" id="industries">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Trusted by Global Brands</h2>
-          <p class="section-subtitle">
-            What our clients say about our quality inspection services
-          </p>
+          <h2 class="section-title">Industries We Serve</h2>
+          <p class="section-subtitle">Specialized expertise across diverse industrial sectors</p>
         </div>
-
-        <div class="swiper testimonial-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide testimonial-slide">
-              <div class="testimonial-card">
-                <div class="client-info">
-                  <img
-                    src="https://randomuser.me/api/portraits/women/45.jpg"
-                    alt="Sarah Johnson"
-                    class="client-photo"
-                  />
-                  <div class="client-details">
-                    <h4>Sarah Johnson</h4>
-                    <p>Procurement Manager, HomeGoods Inc.</p>
-                  </div>
-                </div>
-                <div class="testimonial-content">
-                  <p>
-                    "Qualitech's pre-shipment inspections have saved us
-                    thousands in potential returns and warranty claims. Their
-                    attention to detail is exceptional, and their reports are
-                    the most thorough we've seen in the industry."
-                  </p>
-                  <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-              </div>
+        
+        <div class="industries-grid">
+          <div class="industry-card">
+            <div class="industry-icon">
+              <i class="fas fa-oil-can"></i>
             </div>
-
-            <div class="swiper-slide testimonial-slide">
-              <div class="testimonial-card">
-                <div class="client-info">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/32.jpg"
-                    alt="Michael Chen"
-                    class="client-photo"
-                  />
-                  <div class="client-details">
-                    <h4>Michael Chen</h4>
-                    <p>Supply Chain Director, TechNova</p>
-                  </div>
-                </div>
-                <div class="testimonial-content">
-                  <p>
-                    "The during-production inspections have been game-changing
-                    for our quality metrics. Qualitech identifies issues early,
-                    allowing us to correct them before mass production. Their
-                    expertise in electronics is unparalleled."
-                  </p>
-                  <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide testimonial-slide">
-              <div class="testimonial-card">
-                <div class="client-info">
-                  <img
-                    src="https://randomuser.me/api/portraits/women/68.jpg"
-                    alt="Elena Rodriguez"
-                    class="client-photo"
-                  />
-                  <div class="client-details">
-                    <h4>Elena Rodriguez</h4>
-                    <p>Quality Assurance VP, FashionForward</p>
-                  </div>
-                </div>
-                <div class="testimonial-content">
-                  <p>
-                    "We've worked with several inspection companies, but
-                    Qualitech stands out for their textile expertise. Their
-                    inspectors understand fabric quality at a level that matches
-                    our own technical team."
-                  </p>
-                  <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h3>Oil & Gas</h3>
+            <p>Comprehensive inspection services for upstream, midstream, and downstream operations</p>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="swiper testimonial-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide testimonial-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-content">
-                  <img src="" alt="">
-                </div>
-              </div>
+          
+          <div class="industry-card">
+            <div class="industry-icon">
+              <i class="fas fa-bolt"></i>
             </div>
-            <div class="swiper-slide testimonial-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-content">
-                  <img src="" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide testimonial-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-content">
-                  <img src="" alt="">
-                </div>
-              </div>
-            </div>            
-            <div class="swiper-slide testimonial-slide">
-              <div class="testimonial-card">
-                <div class="testimonial-content">
-                  <img src="" alt="">
-                </div>
-              </div>
-            </div>
+            <h3>Power & Energy</h3>
+            <p>Quality control for power generation, transmission, and renewable energy projects</p>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="client-logos">
-          <img src="images/client-logo1.png" alt="Client Logo 1" />
-          <img src="images/client-logo2.jpg" alt="Client Logo 2" />
-          <img src="images/client-logo3.jpg" alt="Client Logo 3" />
-          <img src="images/client-logo4.jpg" alt="Client Logo 4" />
-          <img src="images/client-logo5.jpg" alt="Client Logo 5" />
-        </div>
-      </div>
-    </section> -->
-    <!-- Replace your existing hero section with this code -->
-    <section class="testimonials" id="testimonials">
-      <div class="section-header">
-        <h2 class="section-title">Our Industries</h2>
-        <!-- <p class="section-subtitle">
-            What our clients say about our quality inspection services
-          </p> -->
-      </div>
-      <div class="modern-slider">
-        <!-- Slide 1 -->
-        <div class="slide active">
-          <div class="slide-content">
-            <div class="container">
-              <h1 class="hero-title2">Power And Renewable</h1>
-              <!-- <p class="hero-subtitle">Ensuring product excellence and compliance with international standards</p>
-                    <div class="hero-buttons">
-                        <a href="services/" class="btn btn-primary">Our Services</a>
-                        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
-                    </div> -->
+          
+          <div class="industry-card">
+            <div class="industry-icon">
+              <i class="fas fa-ship"></i>
             </div>
+            <h3>Marine</h3>
+            <p>Maritime inspection services for vessels, offshore platforms, and marine equipment</p>
           </div>
-          <img
-            src="images/pexels-gustavo-fring-4254171.jpg"
-            alt="Quality inspection professional at work"
-            loading="lazy"
-          />
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="slide">
-          <div class="slide-content">
-            <div class="container">
-              <h1 class="hero-title2">Petro Chemical</h1>
-              <!-- <p class="hero-subtitle">Comprehensive assessments to ensure your supply chain meets quality standards</p>
-                    <div class="hero-buttons">
-                        <a href="services/factory.html" class="btn btn-primary">Learn More</a>
-                        <a href="contact.html" class="btn btn-secondary">Request Audit</a>
-                    </div> -->
+          
+          <div class="industry-card">
+            <div class="industry-icon">
+              <i class="fas fa-industry"></i>
             </div>
+            <h3>Manufacturing</h3>
+            <p>Production line inspections and quality assurance for manufacturing processes</p>
           </div>
-          <img
-            src="images/Industries9.jpg"
-            alt="Factory production line inspection"
-            loading="lazy"
-          />
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="slide">
-          <div class="slide-content">
-            <div class="container">
-              <h1 class="hero-title2">Oil and Gas</h1>
-              <!-- <p class="hero-subtitle">Accurate testing services to verify product safety and compliance</p>
-                    <div class="hero-buttons">
-                        <a href="services/lab.html" class="btn btn-primary">Testing Services</a>
-                        <a href="contact.html" class="btn btn-secondary">Get Certified</a>
-                    </div> -->
+          
+          <div class="industry-card">
+            <div class="industry-icon">
+              <i class="fas fa-road"></i>
             </div>
+            <h3>Infrastructure</h3>
+            <p>Construction and infrastructure project quality control and compliance verification</p>
           </div>
-          <img
-            src="images/Industries3.jpg"
-            style="object-fit: none"
-            alt="Laboratory testing equipment"
-            loading="lazy"
-          />
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="slide">
-          <div class="slide-content">
-            <div class="container">
-              <h1 class="hero-title2">Marine</h1>
-              <!-- <p class="hero-subtitle">Accurate testing services to verify product safety and compliance</p>
-                    <div class="hero-buttons">
-                        <a href="services/lab.html" class="btn btn-primary">Testing Services</a>
-                        <a href="contact.html" class="btn btn-secondary">Get Certified</a>
-                    </div> -->
+          
+          <div class="industry-card">
+            <div class="industry-icon">
+              <i class="fas fa-flask"></i>
             </div>
+            <h3>Chemical</h3>
+            <p>Specialized inspection services for chemical processing and petrochemical facilities</p>
           </div>
-          <img
-            src="images/Industries4.jpg"
-            alt="Laboratory testing equipment"
-            loading="lazy"
-          />
         </div>
-
-        <!-- Slide 5 -->
-        <div class="slide">
-          <div class="slide-content">
-            <div class="container">
-              <h1 class="hero-title2">Mining</h1>
-              <!-- <p class="hero-subtitle">Accurate testing services to verify product safety and compliance</p>
-                    <div class="hero-buttons">
-                        <a href="services/lab.html" class="btn btn-primary">Testing Services</a>
-                        <a href="contact.html" class="btn btn-secondary">Get Certified</a>
-                    </div> -->
-            </div>
-          </div>
-          <img
-            src="images/Industries6.jpg"
-            alt="Laboratory testing equipment"
-            loading="lazy"
-          />
-        </div>
-
-        <!-- Slide 6 -->
-        <div class="slide active">
-          <div class="slide-content">
-            <div class="container">
-              <h1 class="hero-title2">Process Industries</h1>
-              <!-- <p class="hero-subtitle">Ensuring product excellence and compliance with international standards</p>
-                    <div class="hero-buttons">
-                        <a href="services/" class="btn btn-primary">Our Services</a>
-                        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
-                    </div> -->
-            </div>
-          </div>
-          <img
-            src="images/Industries10.jpg"
-            alt="Quality inspection professional at work"
-            loading="lazy"
-          />
-        </div>
-
-        <!-- Slide 7 -->
-        <div class="slide">
-          <div class="slide-content">
-            <div class="container">
-              <h1 class="hero-title2">Infrastructure</h1>
-              <!-- <p class="hero-subtitle">Comprehensive assessments to ensure your supply chain meets quality standards</p>
-                    <div class="hero-buttons">
-                        <a href="services/factory.html" class="btn btn-primary">Learn More</a>
-                        <a href="contact.html" class="btn btn-secondary">Request Audit</a>
-                    </div> -->
-            </div>
-          </div>
-          <img
-            src="images/Industries1.jpg"
-            alt="Factory production line inspection"
-            loading="lazy"
-          />
-        </div>
-
-        <!-- Slide 8 -->
-        <div class="slide">
-          <div class="slide-content">
-            <div class="container">
-              <h1 class="hero-title2">Refining</h1>
-              <!-- <p class="hero-subtitle">Accurate testing services to verify product safety and compliance</p>
-                    <div class="hero-buttons">
-                        <a href="services/lab.html" class="btn btn-primary">Testing Services</a>
-                        <a href="contact.html" class="btn btn-secondary">Get Certified</a>
-                    </div> -->
-            </div>
-          </div>
-          <img
-            src="images/refining.jpg"
-            alt="Laboratory testing equipment"
-            loading="lazy"
-          />
-        </div>
-
-        <!-- Slide 9 -->
-        <div class="slide">
-          <div class="slide-content">
-            <div class="container">
-              <h1 class="hero-title2">Rail Road</h1>
-              <!-- <p class="hero-subtitle">Accurate testing services to verify product safety and compliance</p>
-                    <div class="hero-buttons">
-                        <a href="services/lab.html" class="btn btn-primary">Testing Services</a>
-                        <a href="contact.html" class="btn btn-secondary">Get Certified</a>
-                    </div> -->
-            </div>
-          </div>
-          <img
-            src="images/view-grand-canyon-railway-station-cloudy-day1.jpg"
-            style="object-fit: none"
-            alt="Laboratory testing equipment"
-            loading="lazy"
-          />
-        </div>
-
-        <!-- Slide 10 -->
-        <div class="slide">
-          <div class="slide-content">
-            <div class="container">
-              <h1 class="hero-title2">Desalination</h1>
-              <!-- <p class="hero-subtitle">Accurate testing services to verify product safety and compliance</p>
-                    <div class="hero-buttons">
-                        <a href="services/lab.html" class="btn btn-primary">Testing Services</a>
-                        <a href="contact.html" class="btn btn-secondary">Get Certified</a>
-                    </div> -->
-            </div>
-          </div>
-          <img
-            src="images/Industries8.jpg"
-            alt="Laboratory testing equipment"
-            loading="lazy"
-          />
-        </div>
-
-        <!-- Slider Controls -->
-        <button class="slider-nav prev" aria-label="Previous slide">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="slider-nav next" aria-label="Next slide">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-
-        <!-- Slider Pagination -->
-        <div class="slider-pagination">
-          <span class="dot active" data-slide="0"></span>
-          <span class="dot" data-slide="1"></span>
-          <span class="dot" data-slide="2"></span>
-          <span class="dot" data-slide="3"></span>
-          <span class="dot" data-slide="4"></span>
-          <span class="dot" data-slide="5"></span>
-          <span class="dot" data-slide="6"></span>
-          <span class="dot" data-slide="7"></span>
-          <span class="dot" data-slide="8"></span>
-          <span class="dot" data-slide="9"></span>
-        </div>
-
-        <!-- Progress Bar -->
-        <div class="slider-progress">
-          <div class="progress-bar"></div>
-        </div>
-      </div>
-      <div class="client-logos">
-        <img src="images/icons/badge1.png" alt="Client Logo 1" />
-        <img src="images/icons/badge2.png" alt="Client Logo 2" />
-        <!-- <img src="images/icons/badge3.png" alt="Client Logo 3" /> -->
-        <!-- <img src="images/badge1.png" alt="Client Logo 4" />
-          <img src="images/badge2.png" alt="Client Logo 5" /> -->
       </div>
     </section>
+
     <!-- CTA Section -->
     <section class="cta">
       <div class="container">
         <div class="cta-content">
-          <h2>Ready to Enhance Your Product Quality?</h2>
-          <p>
-            Schedule a consultation with our quality experts to discuss your
-            specific inspection needs.
-          </p>
-        </div>
-        <div class="cta-button">
-          <a href="#contact" class="btn btn-primary btn-large"
-            >Get Started Today</a
-          >
+          <h2>Ready to Ensure Quality Excellence?</h2>
+          <p>Connect with our experts to discuss your inspection requirements and get a customized solution.</p>
+          <a href="#contact" class="btn btn-primary btn-large">
+            Get Started Today
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -987,139 +496,85 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
       <div class="container">
-        <div class="contact-content">
-          <h2 class="section-title">Contact Our Team</h2>
-          <p class="section-subtitle">
-            Get in touch to discuss your inspection requirements or request a
-            service quote
-          </p>
-
+        <div class="contact-grid">
           <div class="contact-info">
-            <!-- Head Office -->
-            <div class="info-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Head Office</h4>
-                <p style="font-weight: 550">
-                  Qualitech Engineering and Inspection Services L.L.C
-                </p>
-                <address>
-                  Suite No#2005, Tower-D, Horizon Tower, Ajman <div>United Arab Emirates</div>
-                </address>
-                <p>
-                  <strong>Phone:</strong>
-                  <a href="tel:+97167668300">+971 6 7668300</a>,
-                  <a href="tel:+97165293300">+971 6 5293300</a>
-                </p>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to discuss your inspection needs? We're here to help.</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="method-content">
+                  <h4>Call Us</h4>
+                  <p>Available 24/7 for urgent inspections</p>
+                  <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </div>
               </div>
-            </div>
-
-            <!-- Branch Office -->
-            <div class="info-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Branch Office</h4>
-                <p style="font-weight: 550">
-                  Qualitech Engineering and Inspection Services LLP
-                </p>
-                <address>
-                  Suite No#F1902, Candeur Signature, Gunjur <div>Bangalore - 560087, India</div>
-                </address>
-                <p>
-                  <strong>Phone:</strong>
-                  <a href="tel:+919778279465">+91 9778279465</a>,
-                  <a href="tel:+917510513631">+91 7510513631</a>
-                </p>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-content">
+                  <h4>Email Us</h4>
+                  <p>Get detailed quotes and information</p>
+                  <a href="mailto:info@ondemandinspection.com">info@ondemandinspection.com</a>
+                </div>
               </div>
-            </div>
-
-            <!-- Email and Website -->
-            <div class="info-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h4>Email</h4>
-                <a href="mailto:info@qualitechme.com">info@qualitechme.com</a>
-              </div>
-              <i class="fas fa-globe" style="margin-top: 15px"></i>
-              <div>
-                <h4>Website</h4>
-                <a href="https://www.qualitechme.com">www.qualitechme.com</a>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="method-content">
+                  <h4>Response Time</h4>
+                  <p>Emergency: Within 2 hours</p>
+                  <p>Standard: Within 24 hours</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="social-links">
-            <a href="https://www.linkedin.com/company/qualitech-inspection/?originalSubdomain=ae"><i class="fab fa-linkedin"></i></a>
-            <!-- <a href="#"><i class="fab fa-x"></i></a> -->
-            <!-- <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a> -->
+          <div class="contact-form">
+            <form id="inquiryForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" placeholder="Your Email" required />
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="tel" id="phone" name="phone" placeholder="Phone Number" />
+                </div>
+                <div class="form-group">
+                  <select id="service" name="service">
+                    <option value="">Select Service</option>
+                    <option value="Quality Inspection">Quality Inspection</option>
+                    <option value="Supplier Audit">Supplier Audit</option>
+                    <option value="Project Management">Project Management</option>
+                    <option value="Quality Engineering">Quality Engineering</option>
+                    <option value="Expediting Services">Expediting Services</option>
+                    <option value="Certification Services">Certification Services</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Describe your inspection requirements" rows="4"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-full">
+                Submit Request
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
           </div>
-        </div>
-
-        <div class="contact-form">
-          <form id="inquiryForm">
-            <div class="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Phone Number"
-              />
-            </div>
-            <div class="form-group">
-              <select id="service" name="service">
-                <option value="">Select Service</option>
-                <option value="Vendor Surveillance and Source Inspection">
-                  Vendor Surveillance and Source Inspection
-                </option>
-                <option value="Expediting">Expediting</option>
-                <option value="Supplier Evaluation / Audit">
-                  Supplier Evaluation / Audit
-                </option>
-                <option value="Project Management Services">
-                  Project Management Services
-                </option>
-                <option value="Quality Engineering and Certification Services">
-                  Quality Engineering and Certification Services
-                </option>
-                <option value="Lifting Equipment Inspection & Certification">
-                  Lifting Equipment Inspection & Certification
-                </option>
-                <option value="Property / Home Inspection & Snagging Services">
-                  Property / Home Inspection & Snagging Services
-                </option>
-              </select>
-            </div>
-            <div class="form-group">
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Your Message / Requirements"
-                rows="4"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">
-              Submit Inquiry
-            </button>
-          </form>
         </div>
       </div>
     </section>
@@ -1129,178 +584,107 @@
       <div class="container">
         <div class="footer-grid">
           <div class="footer-col">
-            <h3>Qualitech</h3>
-            <p>
-              Professional quality inspection services for manufacturers,
-              importers, and brands worldwide.
-            </p>
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <span class="logo-text">On Demand Inspection</span>
+            </div>
+            <p>Professional quality control and inspection services delivered when and where you need them most.</p>
             <div class="footer-social">
-              <a
-                href="https://www.linkedin.com/company/qualitech-inspection/?originalSubdomain=ae"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <!-- <a href="#"><i class="fab fa-x"></i></a> -->
-              <!-- <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a> -->
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
             </div>
           </div>
+          
           <div class="footer-col">
             <h4>Services</h4>
             <ul>
-              <li>
-                <a href="#services"
-                  >Vendor Surveillance and Source Inspection</a
-                >
-              </li>
-              <li><a href="#services">Expediting</a></li>
-              <li><a href="#services">Supplier Evaluation / Audit</a></li>
-              <li><a href="#services">Project Management Services</a></li>
-              <li>
-                <a href="#services"
-                  >Quality Engineering and Certification Services</a
-                >
-              </li>
-              <li>
-                <a href="#services"
-                  >Lifting Equipment Inspection & Certification</a
-                >
-              </li>
-              <li>
-                <a href="#services"
-                  >Property / Home Inspection & Snagging Services</a
-                >
-              </li>
+              <li><a href="#services">Quality Inspection</a></li>
+              <li><a href="#services">Supplier Audit</a></li>
+              <li><a href="#services">Project Management</a></li>
+              <li><a href="#services">Quality Engineering</a></li>
+              <li><a href="#services">Expediting Services</a></li>
+              <li><a href="#services">Certification Services</a></li>
             </ul>
           </div>
+          
           <div class="footer-col">
             <h4>Industries</h4>
             <ul>
-              <li><a href="#">Oil and Gas</a></li>
-              <li><a href="#">Marine</a></li>
-              <li><a href="#">Process Industries</a></li>
-              <li><a href="#">Infrastructure</a></li>
-              <li><a href="#">Power And Renewable</a></li>
-              <li><a href="#">Refining</a></li>
-              <li><a href="#">Petro Chemical</a></li>
-              <li><a href="#">Rail Road</a></li>
-              <li><a href="#">Mining</a></li>
-              <li><a href="#">Desalination</a></li>
+              <li><a href="#industries">Oil & Gas</a></li>
+              <li><a href="#industries">Power & Energy</a></li>
+              <li><a href="#industries">Marine</a></li>
+              <li><a href="#industries">Manufacturing</a></li>
+              <li><a href="#industries">Infrastructure</a></li>
+              <li><a href="#industries">Chemical</a></li>
             </ul>
           </div>
+          
           <div class="footer-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="about.html">About Us</a></li>
-              <!-- <li><a href="#">Our Team</a></li> -->
-              <!-- <li><a href="#">Quality Standards</a></li> -->
-              <li><a href="careers.html">Careers</a></li>
-              <!-- <li><a href="#">Blog</a></li> -->
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#process">Our Process</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
             </ul>
           </div>
         </div>
 
         <div class="footer-bottom">
           <div class="copyright">
-            &copy; 2025 Qualitech. All Rights Reserved.
+            &copy; 2025 On Demand Inspection. All Rights Reserved.
           </div>
           <div class="legal-links">
-            <span style="color: #94a3b8">Design by</span
-            ><a href="mailto:pixelstackpro@gmail.com"> PixelStackPro</a>
-            <!-- <a href="#">Privacy Policy</a> -->
-            <!-- <a href="#">Terms of Service</a> -->
-            <!-- <a href="#">Sitemap</a> -->
+            <span>Professional Quality Control Services</span>
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- ✅ EmailJS SDK via Skypack (modern, ESM-compatible) -->
-    <!-- <script type="module">
-  import * as emailjs from 'https://cdn.skypack.dev/@emailjs/browser';
+    <!-- Service Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div class="modal-body">
+          <!-- Content will be inserted here by JavaScript -->
+        </div>
+      </div>
+    </div>
 
-  emailjs.init('Ayg9tW_wTF1u-gp3m'); // 🔑 Replace with your real public key
-  window.emailjs = emailjs; // Make available globally for script.js
-</script> -->
-    <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <!-- Your JS that uses emailjs.send -->
-    <script>
-      document
-        .getElementById("inquiryForm")
-        .addEventListener("submit", async function (e) {
-          e.preventDefault();
-
-          const formData = new FormData(this);
-
-          // Show loading popup
-          Swal.fire({
-            title: "Sending...",
-            text: "Please wait",
-            allowOutsideClick: false,
-            didOpen: () => {
-              Swal.showLoading();
-            },
-          });
-
-          try {
-            const response = await fetch("send-mail.php", {
-              method: "POST",
-              body: formData,
-            });
-
-            const result = await response.text();
-
-            // Close loading popup
-            Swal.close();
-
-            // Show success popup
-            Swal.fire({
-              title: "Message Sent!",
-              icon: "success",
-              confirmButtonText: "OK",
-              showClass: {
-                popup: "animate__animated animate__fadeInDown",
-              },
-              hideClass: {
-                popup: "animate__animated animate__fadeOutUp",
-              },
-            });
-
-            this.reset();
-          } catch (err) {
-            // Close loading popup
-            Swal.close();
-
-            // Show error popup
-            Swal.fire({
-              title: "Error!",
-              text: "Error sending message",
-              icon: "error",
-              confirmButtonText: "Try Again",
-            });
-
-            console.error(err);
-          }
-        });
-    </script>
-
     <script src="script.js"></script>
+    
     <script>
-      document
-        .getElementById("openPopup")
-        .addEventListener("click", function (e) {
-          e.preventDefault(); // Prevents default anchor behavior
-          document.getElementById("popup").style.display = "flex";
+      // Form submission handler
+      document.getElementById("inquiryForm").addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        // Show loading popup
+        Swal.fire({
+          title: "Sending Request...",
+          text: "Please wait while we process your inquiry",
+          allowOutsideClick: false,
+          didOpen: () => {
+            Swal.showLoading();
+          },
         });
 
-      document
-        .getElementById("closePopup")
-        .addEventListener("click", function () {
-          document.getElementById("popup").style.display = "none";
-        });
+        // Simulate form submission (replace with actual endpoint)
+        setTimeout(() => {
+          Swal.fire({
+            title: "Request Sent!",
+            text: "Thank you for your inquiry. Our team will contact you within 24 hours.",
+            icon: "success",
+            confirmButtonText: "OK",
+          });
+          
+          this.reset();
+        }, 2000);
+      });
     </script>
   </body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl509319'},{'dcenter':'sg2'},{'cp_id':'10494828'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
+</html>
