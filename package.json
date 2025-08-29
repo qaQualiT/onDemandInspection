@@ -1,0 +1,22 @@
+{
+  "name": "on-demand-inspection",
+  "version": "1.0.0",
+  "description": "Professional quality control and inspection services website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "build": "echo 'Build complete - static files ready'",
+    "preview": "npx serve . -p 4173"
+  },
+  "keywords": [
+    "inspection",
+    "quality-control",
+    "audit",
+    "certification"
+  ],
+  "author": "On Demand Inspection",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
