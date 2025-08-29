@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "npx serve . -p 3000",
-    "build": "echo 'Build complete - static files ready'",
+    "build": "mkdir -p public && cp -r *.html *.css *.js images public/ 2>/dev/null || true",
     "preview": "npx serve . -p 4173"
   },
   "keywords": [
