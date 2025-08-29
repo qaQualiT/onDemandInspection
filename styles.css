@@ -1067,6 +1067,16 @@ section {
   box-shadow: var(--shadow-lg);
 }
 
+.tally-form-container {
+  width: 100%;
+  min-height: 600px;
+}
+
+.tally-form-container iframe {
+  border-radius: var(--radius-md);
+  background: transparent;
+}
+
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;

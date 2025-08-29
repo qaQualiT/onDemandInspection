@@ -547,43 +547,18 @@
           </div>
 
           <div class="contact-form">
-            <form id="inquiryForm">
-              <div class="form-row">
-                <div class="form-group">
-                  <input type="text" id="name" name="name" placeholder="Your Name *" required />
-                </div>
-                <div class="form-group">
-                  <input type="email" id="email" name="email" placeholder="Your Email *" required />
-                </div>
-              </div>
-              
-              <div class="form-row">
-                <div class="form-group">
-                  <input type="tel" id="phone" name="phone" placeholder="Phone Number" />
-                </div>
-                <div class="form-group">
-                  <select id="service" name="service">
-                    <option value="">Select Service Type</option>
-                    <option value="Quality Inspection">Quality Inspection</option>
-                    <option value="Supplier Audit">Supplier Audit</option>
-                    <option value="Project Management">Project Management</option>
-                    <option value="Quality Engineering">Quality Engineering</option>
-                    <option value="Expediting Services">Expediting Services</option>
-                    <option value="Certification Services">Certification Services</option>
-                    <option value="Emergency Inspection">Emergency Inspection</option>
-                  </select>
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <textarea id="message" name="message" placeholder="Describe your inspection requirements, timeline, and any specific standards or certifications needed *" rows="4" required></textarea>
-              </div>
-              
-              <button type="submit" class="btn btn-primary btn-full">
-                Submit Request
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </form>
+            <div class="tally-form-container">
+              <iframe 
+                data-tally-src="https://tally.so/embed/wMWJql?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                loading="lazy" 
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0" 
+                title="Contact Form">
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -669,36 +644,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
     
     <script>
-      // Enhanced form submission with validation
-      document.getElementById("inquiryForm").addEventListener("submit", async function (e) {
-        e.preventDefault();
-
-        // Show loading popup
-        Swal.fire({
-          title: "Sending Request...",
-          text: "Please wait while we process your inspection inquiry",
-          allowOutsideClick: false,
-          showConfirmButton: false,
-          didOpen: () => {
-            Swal.showLoading();
-          },
-        });
-
-        // Simulate form submission (replace with actual endpoint)
-        setTimeout(() => {
-          Swal.fire({
-            title: "Request Submitted Successfully!",
-            text: "Thank you for your inquiry. Our inspection team will contact you within 4 hours to discuss your requirements and provide a detailed proposal.",
-            icon: "success",
-            confirmButtonText: "Excellent!",
-            confirmButtonColor: "#FF6B35"
-          });
-          
-          this.reset();
-        }, 2000);
-      });
+      // Tally form is now handled externally
+      console.log('Tally form loaded');
     </script>
   </body>
 </html>
