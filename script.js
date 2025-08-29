@@ -347,53 +347,6 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-// Enhanced form submission
-document.getElementById('inquiryForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  
-  if (!validateForm(this)) {
-    Swal.fire({
-      title: 'Please Complete Required Fields',
-      text: 'All required fields must be filled out before submitting.',
-      icon: 'warning',
-      confirmButtonColor: 'var(--safety-orange)'
-    });
-    return;
-  }
-  
-  const email = document.getElementById('email').value;
-  if (!validateEmail(email)) {
-    Swal.fire({
-      title: 'Invalid Email Address',
-      text: 'Please enter a valid email address.',
-      icon: 'error',
-      confirmButtonColor: 'var(--safety-orange)'
-    });
-    return;
-  }
-  
-  // Show loading state
-  const submitBtn = this.querySelector('button[type="submit"]');
-  const originalText = submitBtn.innerHTML;
-  submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-  submitBtn.disabled = true;
-  
-  // Simulate API call
-  setTimeout(() => {
-    Swal.fire({
-      title: 'Request Submitted Successfully!',
-      text: 'Thank you for your inquiry. Our team will contact you within 24 hours to discuss your inspection requirements.',
-      icon: 'success',
-      confirmButtonColor: 'var(--safety-orange)',
-      confirmButtonText: 'Great!'
-    }).then(() => {
-      this.reset();
-      submitBtn.innerHTML = originalText;
-      submitBtn.disabled = false;
-    });
-  }, 2000);
-});
-
 // Parallax effect for hero section
 window.addEventListener('scroll', () => {
   const scrolled = window.pageYOffset;
