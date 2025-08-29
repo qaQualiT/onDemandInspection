@@ -10,9 +10,9 @@
   --safety-orange: #FF6B35;
   --safety-orange-light: #FF8A5B;
   --safety-orange-dark: #E55A2B;
-  --soft-blue: #4A90E2;
-  --soft-blue-light: #6BA3E8;
-  --soft-blue-dark: #3A7BC8;
+  --soft-blue: #9CA3AF;
+  --soft-blue-light: #D1D5DB;
+  --soft-blue-dark: #6B7280;
   
   /* Neutral Colors */
   --white: #FFFFFF;
@@ -259,7 +259,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  background-image: url('https://images.pexels.com/photos/162568/oil-rig-sea-oil-production-162568.jpeg?auto=compress&cs=tinysrgb&w=1600');
   background-size: cover;
   background-position: center;
   opacity: 0.1;
